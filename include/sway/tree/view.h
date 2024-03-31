@@ -44,6 +44,7 @@ struct sway_view_impl {
 	void (*set_activated)(struct sway_view *view, bool activated);
 	void (*set_tiled)(struct sway_view *view, bool tiled);
 	void (*set_fullscreen)(struct sway_view *view, bool fullscreen);
+	void (*set_maximized)(struct sway_view *view, bool maximized);
 	void (*set_resizing)(struct sway_view *view, bool resizing);
 	bool (*wants_floating)(struct sway_view *view);
 	bool (*is_transient_for)(struct sway_view *child,
