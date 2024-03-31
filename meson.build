@@ -1,7 +1,7 @@
 project(
 	'sway',
 	'c',
-	version: '1.9',
+	version: '1.10-dev',
 	license: 'MIT',
 	meson_version: '>=0.60.0',
 	default_options: [
@@ -38,7 +38,7 @@ if is_freebsd
 endif
 
 # Execute the wlroots subproject, if any
-wlroots_version = ['>=0.18.0', '<0.19.0']
+wlroots_version = ['>=0.16.0', '<0.19.0']
 subproject(
 	'wlroots',
 	default_options: ['examples=false'],
